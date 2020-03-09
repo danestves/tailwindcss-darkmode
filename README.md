@@ -52,7 +52,7 @@ module.exports = {
 </div>
 ```
 
-Dark variants must be enabled on each utility in your `tailwind.config.js` file.
+🚨 Dark variants must be enabled on each utility in your `tailwind.config.js` file. 🚨
 
 ```js
 variants: {
