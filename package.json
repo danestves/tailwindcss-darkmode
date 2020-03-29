@@ -1,6 +1,6 @@
 {
   "name": "@danestves/tailwindcss-darkmode",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "Tailwind CSS plugin that adds variants for DarkMode",
   "main": "index.js",
   "repository": {
@@ -24,10 +24,10 @@
   },
   "homepage": "https://github.com/danestves/tailwindcss-darkmode",
   "dependencies": {
-    "tailwindcss": "^1.1.4"
+    "tailwindcss": "^1.2.0"
   },
   "devDependencies": {
-    "postcss": "^7.0.25",
-    "prettier": "^1.19.1"
+    "postcss": "^7.0.27",
+    "prettier": "^2.0.2"
   }
 }
