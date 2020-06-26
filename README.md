@@ -25,14 +25,14 @@ module.exports = {
 
   plugins: [
     // ...
-    require('tailwindcss-darkmode')()
+    require('@danestves/tailwindcss-darkmode')()
   ]
 };
 ```
 
 ## Variants generated
 
-**Note:** _This variants are activated when the `html` or `body` has the class `dark-mode`_.
+**Note:** _These variants are activated when either the `html` or `body` tag has the class `dark-mode`_.
 
 - `dark`
 - `dark:hover`
@@ -92,11 +92,11 @@ variants: {
   }
 ```
 
-You can check the full list of default variants in [Tailwind default config file][1].
+You can check the full list of default variants in the [Tailwind default config file][1].
 
 ## Customize class name prefix for variants
 
-`dark` is used as default prefix for variants generated. It´s possible to change `dark` for whatever you want, just pass any string as param. For example, with `prefers-dark`:
+`dark` is used as default prefix for the variants that are generated. It´s possible to change `dark` for whatever you want, just pass any string as a param. For example, with `prefers-dark`:
 
 ```js
 module.exports = {
