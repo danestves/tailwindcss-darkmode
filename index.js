@@ -1,5 +1,5 @@
-module.exports = function(prefix = 'dark') {
-  return function({ addVariant, e }) {
+export default (prefix = 'dark') => {
+  return ({ addVariant, e }) => {
     addVariant(prefix, ({ modifySelectors, separator }) => {
       modifySelectors(({ className }) => {
         return `.dark-mode .${e(`${prefix}${separator}${className}`)}`;
@@ -54,4 +54,4 @@ module.exports = function(prefix = 'dark') {
       });
     });
   };
-}
+};
