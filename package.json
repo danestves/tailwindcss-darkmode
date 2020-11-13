@@ -24,10 +24,10 @@
   },
   "homepage": "https://github.com/danestves/tailwindcss-darkmode",
   "dependencies": {
-    "tailwindcss": "^1.2.0"
+    "tailwindcss": "^1.9.6"
   },
   "devDependencies": {
-    "postcss": "^7.0.27",
-    "prettier": "^2.0.2"
+    "postcss": "^8.1.7",
+    "prettier": "^2.1.2"
   }
 }
