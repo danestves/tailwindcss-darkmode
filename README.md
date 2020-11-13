@@ -6,7 +6,6 @@ Tailwind CSS plugin that adds variants for DarkMode.
 [![License](https://img.shields.io/npm/l/@danestves/tailwindcss-darkmode?style=for-the-badge)](https://es.wikipedia.org/wiki/Licencia_MIT)
 [![Travis Build](https://img.shields.io/travis/com/danestves/tailwindcss-darkmode?style=for-the-badge)](https://travis-ci.com/danestves/tailwindcss-darkmode)
 
-
 ## Installation
 
 ```
@@ -30,9 +29,27 @@ module.exports = {
 };
 ```
 
+Actually the function receive two parameters:
+
+- `prefix`: default to `dark`.
+- `activatorClass`: default to `dark-mode`.
+
+So if you want to rename the `activatorClass` you can make it as simple as:
+
+```js
+module.exports = {
+  // ...
+
+  plugins: [
+    // ...
+    require('@danestves/tailwindcss-darkmode')('dark', 'my-custom-activator-class')
+  ]
+};
+```
+
 ## Variants generated
 
-**Note:** _These variants are activated when either the `html` or `body` tag has the class `dark-mode`_.
+**Note:** _These variants are activated when either the `html` or `body` tag has the class `dark-mode`_. But you can change it.
 
 - `dark`
 - `dark:hover`
@@ -124,7 +141,7 @@ variants: {
     'prefers-dark:group-hover',
     'focus-within',
     'prefers-dark:focus-within'
-  ]
+  ];
 }
 ```
 
