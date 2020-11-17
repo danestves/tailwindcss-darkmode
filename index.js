@@ -1,4 +1,4 @@
-export default (prefix = 'dark', activatorClass = 'dark-mode') => {
+module.exports = (prefix = 'dark', activatorClass = 'dark-mode') => {
   return ({ addVariant, e }) => {
     addVariant(prefix, ({ modifySelectors, separator }) => {
       modifySelectors(({ className }) => {
